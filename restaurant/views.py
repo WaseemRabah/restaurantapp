@@ -68,3 +68,7 @@ def contact(request):
         form = ContactForm()
     
     return render(request, 'contact.html', {'form': form})
+
+
+def contact_thank_you(request):
+    return render(request, 'contact_thank_you.html')
