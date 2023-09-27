@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Confirm Deletion</h2>
+<p>You are about to delete the following booking:</p>
+<ul>
+    <li>Date: {{ booking.date }}</li>
+    <li>Time: {{ booking.time }}</li>
+    <li>Number of People: {{ booking.num_people }}</li>
+    
+</ul>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm Delete</button>
+    <a href="{% url 'booking_list' %}">Cancel</a>
+</form>
+{% endblock %}
