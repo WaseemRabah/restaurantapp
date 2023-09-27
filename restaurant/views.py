@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Booking
 from .forms import BookingForm
 
@@ -42,3 +42,16 @@ def booking_detail(request):
         return render(request, 'booking/booking_detail.html', {'bookings': bookings, 'email': email})
     else:
         return render(request, 'booking/email_input.html')
+
+
+def delete_booking(request, pk):
+    booking = get_object_or_404(Booking, pk=pk)
+
+    
+
+    if request.method == 'POST':
+        
+        booking.delete()
+        return redirect('booking_list')  
+
+    return render(request, 'booking/booking_confirm_delete.html', {'booking': booking})
