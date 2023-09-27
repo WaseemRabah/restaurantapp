@@ -21,3 +21,15 @@ def create_booking(request):
     else:
         form = BookingForm()
     return render(request, 'booking/booking_form.html', {'form': form})
+
+
+def update_booking(request, pk):
+    booking = Booking.objects.get(pk=pk)
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('booking_list')
+    else:
+        form = BookingForm(instance=booking)
+    return render(request, 'booking/booking_form.html', {'form': form})
