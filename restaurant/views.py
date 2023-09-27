@@ -33,3 +33,12 @@ def update_booking(request, pk):
     else:
         form = BookingForm(instance=booking)
     return render(request, 'booking/booking_form.html', {'form': form})
+
+
+def booking_detail(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        bookings = Booking.objects.filter(email=email)
+        return render(request, 'booking/booking_detail.html', {'bookings': bookings, 'email': email})
+    else:
+        return render(request, 'booking/email_input.html')
