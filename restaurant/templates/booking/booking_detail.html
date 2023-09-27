@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Bookings for {{ email }}</h2>
+<ul>
+    {% for booking in bookings %}
+        <li>
+            <strong>Date:</strong> {{ booking.date }}<br>
+            <strong>Time:</strong> {{ booking.time }}<br>
+            <strong>Number of People:</strong> {{ booking.num_people }}<br>
+            <strong>Occasion:</strong> {{ booking.get_occasion_display }}<br>
+
+            <a href="{% url 'update_booking' booking.id %}">Edit</a>
+            <a href="{% url 'delete_booking' booking.id %}">Delete</a>
+        </li>
+    {% empty %}
+        <p>No bookings found for this email.</p>
+    {% endfor %}
+</ul>
+<a href="{% url 'home' %}">Back to Home</a>
+{% endblock %}
