@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Booking
-from .forms import BookingForm
+from .forms import BookingForm, ContactForm
 
 # Create your views here.
 def home(request):
@@ -55,3 +55,16 @@ def delete_booking(request, pk):
         return redirect('booking_list')  
 
     return render(request, 'booking/booking_confirm_delete.html', {'booking': booking})
+
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            
+            return redirect('contact_thank_you')  
+    else:
+        form = ContactForm()
+    
+    return render(request, 'contact.html', {'form': form})
