@@ -19,3 +19,13 @@ class Booking(models.Model):
     occasion = models.CharField(max_length=1, choices=OCCASION_CHOICES, default='1')
     def __str__ (self):
         return self.name
+    
+
+class ContactMessage(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    subject = models.CharField(max_length=200)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.subject
