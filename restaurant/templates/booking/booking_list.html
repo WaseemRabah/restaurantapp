@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking List</title>
+</head>
+<body>
+    <h1>Booking List</h1>
+    <ul>
+        {% for booking in bookings %}
+            <li>
+                Name: {{ booking.name }}<br>
+                Email: {{ booking.email }}<br>
+                Date: {{ booking.date }}<br>
+                Time: {{ booking.time }}<br>
+                Occasion: {{ booking.get_occasion_display }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
