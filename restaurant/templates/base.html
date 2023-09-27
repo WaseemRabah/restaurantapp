@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Restaurant</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'create_booking' %}">Book a Table</a></li>
+                <li><a href="{% url 'booking_detail' %}">My Bookings</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
