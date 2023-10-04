@@ -50,7 +50,7 @@ def logoutUser(request):
     logout(request)
     return redirect('login')
 
-
+@login_required
 def booking_list(request):
     bookings = Booking.objects.filter(user=request.user)
     return render(request, 'booking/booking_list.html', {'bookings': bookings})
@@ -81,11 +81,11 @@ def update_booking(request, pk):
         form = BookingForm(instance=booking)
     return render(request, 'booking/booking_form.html', {'form': form})
 
-
+@login_required
 def booking_detail(request):
     if request.method == 'POST':
         email = request.POST.get('email')
-        bookings = Booking.objects.filter(email=email)
+        bookings = Booking.objects.filter(user=request.user, email=email)
         return render(request, 'booking/booking_detail.html', {'bookings': bookings, 'email': email})
     else:
         return render(request, 'booking/email_input.html')
