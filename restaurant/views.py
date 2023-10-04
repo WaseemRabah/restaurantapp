@@ -4,6 +4,7 @@ from .forms import BookingForm, ContactForm, CreateUserForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -51,16 +52,19 @@ def logoutUser(request):
 
 
 def booking_list(request):
-    bookings = Booking.objects.all()
+    bookings = Booking.objects.filter(user=request.user)
     return render(request, 'booking/booking_list.html', {'bookings': bookings})
 
-
+@login_required
 def create_booking(request):
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
-            form.save()
+            booking = form.save(commit=False)
+            booking.user = request.user
+            booking.save()
             return redirect('booking_list')
+            
     else:
         form = BookingForm()
     return render(request, 'booking/booking_form.html', {'form': form})
