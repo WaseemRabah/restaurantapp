@@ -1,33 +1,43 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Restaurant</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online bubble tea shop">
+    <meta name="keywords" content="bubble tea, sparkling, boba, matcha, yin yang">
+    <meta name="author" content="waseem rabah">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Infinitea</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'create_booking' %}">Book a Table</a></li>
-                <li><a href="{% url 'booking_detail' %}">My Bookings</a></li>
-                <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                <li><a href="{% url 'register' %}">Register</a></li>
-                {% if user.is_authenticated %}
-                    <li><a href="{% url 'login' %}">Login</a></li>
-                    <li><a href="{% url 'logout' %}">Logout</a></li>
-                {% endif %}
-            </ul>
+
+        <!--create navbar-->
+<header class="header-home">
+    <h1>Infinitea <br><i class="fa-solid fa-infinity"></i></h1>
+        <nav class="navbar">
+            <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'create_booking' %}">Book a Table</a></li>
+                        <li><a href="{% url 'booking_detail' %}">My Bookings</a></li>
+                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li><a href="{% url 'menu' %}">Menu</a></li>
+                        <li><a href="{% url 'register' %}">Rigester</a></li>
+                        {% if user.is_authenticated %}
+                            <li><a href="{% url 'logout' %}">Sign Out</a></li>
+                        {% endif %}
         </nav>
-    </header>
-
-    <div class="content">
-        {% block content %}
-        
-        {% endblock %}
+</header>
+{% block content %}
+{% endblock content %}
+<footer>
+        <!--add the social media links with icons-->
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank" rel="nooopener" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="nooopener" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.snapchat.com/" target="_blank" rel="nooopener" aria-label="Visit our Snapchat page"><i class="fa-brands fa-snapchat"></i></a>
     </div>
-
-    <footer>
-        
-    </footer>
+</footer>
+<script src="https://kit.fontawesome.com/280e16a9f8.js" crossorigin="anonymous"></script>
 </body>
 </html>
