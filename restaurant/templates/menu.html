@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main>
+        <!--create drinks navbar-->
+    <section class="section">
+        <h2 class="heading__none">Menu</h2>
+        <a href="#sparkling">SPARKLING</a>
+        <a href="#black-tea">BLACK TEA</a>
+        <a href="#green-tea">GREEN TEA</a>
+        <a href="#extras">EXTRAS</a>
+    </section>
+    <!--create sparkling section-->
+    <div id ="sparkling" class="sparkling"><h3>SPARKLING</h3></div>
+    <div class="box">
+        <figure>
+            <img src="{% static "img/blueberry.png" %}" alt="Blueberry to go cup">
+            <figcaption>Blueberry</figcaption> 
+        </figure>
+        <figure>
+            <img src="{% static "img/kiwi.png" %}" alt="Kiwi to go cup">
+            <figcaption>Kiwi</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/cranberry.png" %}" alt="Caranberry to go cup">
+            <figcaption>Caranberry</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/pineapple.png" %}" alt="Pineapple to go cup">
+            <figcaption>Pineapple</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/grapefruit.png" %}" alt="Grapefruit to go cup">
+            <figcaption>Grapefruit</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/mango.png" %}" alt="Mango to go cup">
+            <figcaption>Mango</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/lychee.png" %}" alt=" Lychee to go cup">
+            <figcaption>Lychee</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/peach.png" %}" alt="Peach to go cup">
+            <figcaption>Peach</figcaption>
+        </figure>   
+        </div>
+        <!--create black tea section-->
+    <div id="black-tea" class="black-tea"><h3>BLACK TEA</h3></div>
+    <div class="box">
+        <figure>
+            <img src="{% static "img/blacksugar.png" %}" alt="Black Sugar to go cup">
+            <figcaption>Black Sugar</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/yinyang.png" %}" alt="Yin Yang to go cup">
+            <figcaption>Yin Yang</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/orginial.png" %}" alt="Orginial to go cup">
+            <figcaption>Orginial</figcaption>
+        </figure> 
+    </div>
+        <!--create green tea section-->
+    <div id="green-tea" class="green-tea"><h3>GREEN TEA</h3></div>
+    <div class="box">
+        <figure>
+            <img src="{% static "img/littleboba.png" %}" alt="Little Boba to go cup">
+            <figcaption>Little Boba</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/sunsetpassion.png" %}" alt="Sunset Passion to go cup">
+            <figcaption>Sunset Passion</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/matcha.png" %}" alt="Match to go cup">
+            <figcaption>Match</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/taro.png" %}" alt="Taro to go cup">
+            <figcaption>Taro</figcaption>
+        </figure>
+    </div>
+        <!--create extras section-->
+    <div id="extras" class="extras"><h3>EXTRAS</h3></div>
+    <div class="box">
+        <figure>
+            <img src="{% static "img/rainbow.png" %}" alt="Rainbow Jelly topping">
+            <figcaption>Rainbow Jelly</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/coffee.png" %}" alt="Coffee Jelly topping">
+            <figcaption>Coffee Jelly</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/basil.png" %}" alt="Basil Seed topping">
+            <figcaption>Basil Seed</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/strawberry.png" %}" alt="Strawberry topping">
+            <figcaption>Strawberry</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/passionfruitpop.png" %}" alt="Passion Fruit topping">
+            <figcaption>Passion Fruit</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/blueberrypop.png" %}" alt="Blueberry topping">
+            <figcaption>Blueberry</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/litchi.png" %}" alt="Litchi topping">
+            <figcaption>Litchi</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/mangopop.png" %}" alt="Mango topping">
+            <figcaption>Mango</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/coconut.png" %}" alt="Coconut topping">
+            <figcaption>Coconut</figcaption>
+        </figure>
+        <figure>
+            <img src="{% static "img/tapioca.png" %}" alt="Tapiocs topping">
+            <figcaption>Tapioca</figcaption>
+        </figure>
+
+    </div>
+</main>
+{% endblock content %}
