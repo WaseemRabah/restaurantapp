@@ -1,9 +1,36 @@
 {% extends "base.html" %}
-
-{% block title %}Home - My Restaurant{% endblock %}
-
+{% load static %}
 {% block content %}
-<h1>Welcome to My Restaurant</h1>
-<p>Explore our delicious menu and book a table today!</p>
 
-{% endblock %}
+<main>
+        <!--add hero image-->
+    <div class="hero-image">
+        <img src="{% static 'img/hero-image2.jpg' %}" alt="bubble tea cups with With different flavors">
+        <!--add our trendings section-->
+    </div>
+    <div class="trending">
+        <h2>Our Trendings</h2>
+        </div>
+        <!--add the left part-->
+    <div class="container">
+        <ul class="left">
+            <li>BLACK SUGAR</li>
+            <li>PASSION FRUIT</li>
+            <li>YIN YANG</li>
+            <li>TARO</li>
+        </ul>
+        <!--add the middle part which contain the image-->
+    <div class="middle"></div>
+        <!--add the right part-->
+        <ul class="right">
+            <li>SUNSET PASSION</li>
+            <li>LITTLE BOBA</li>
+            <li>PINEAPPLE</li>
+            <li>LYCHEE</li>
+        </ul>
+    </div>
+</main>
+
+
+{% endblock content %}
+
