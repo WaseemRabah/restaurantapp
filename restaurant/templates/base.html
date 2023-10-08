@@ -18,14 +18,15 @@
     <h1>Infinitea <br><i class="fa-solid fa-infinity"></i></h1>
         <nav class="navbar">
             <li><a href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'create_booking' %}">Book a Table</a></li>
-                        <li><a href="{% url 'booking_detail' %}">My Bookings</a></li>
-                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                        <li><a href="{% url 'menu' %}">Menu</a></li>
-                        <li><a href="{% url 'register' %}">Rigester</a></li>
-                        {% if user.is_authenticated %}
-                            <li><a href="{% url 'logout' %}">Sign Out</a></li>
-                        {% endif %}
+            <li><a href="{% url 'create_booking' %}">Book a Table</a></li>
+            <li><a href="{% url 'booking_detail' %}">My Bookings</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Sign Out</a></li>
+            {% else %}
+                <li><a href="{% url 'register' %}">Rigester</a></li>
+            {% endif %}
         </nav>
 </header>
 {% block content %}

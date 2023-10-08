@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Booking(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=30)
     email = models.EmailField(unique=True)
     num_people = models.PositiveIntegerField(default=1)
