@@ -110,3 +110,9 @@ The color scheme of the application is based on the bold colors:
 - **Cairo Font**: The Cairo font is employed for various textual elements throughout the app, providing a modern and easy-to-read typeface. It is used for general text, menu descriptions, and other informational content.
 
 - **Parsienne Font**: The Parsienne font is featured in our logo and "Contact Us" section. This elegant and stylish font adds a touch of sophistication and uniqueness to these specific elements.
+
+
+### Wireframes
+
+- [Desktop Wireframes](documentation/desktop_wireframe.pdf)
+- [Mobile Wireframes](documentation/mobile_wirframe.pdf)
