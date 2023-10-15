@@ -93,3 +93,14 @@ Our aim is to make your first visit to Infintea Bubble Tea informative, enjoyabl
     + [Font Awesome](https://fontawesome.com/): was used to create the icons used in the website.
     + [Draw.io](https://www.lucidchart.com/) was used to make a flowchart for the README file.
     + [Coolors](https://coolors.co/202a3c-1c2431-181f2a-0b1523-65e2d9-925cef-6b28e0-ffffff-eeeeee) was used to make a color palette for the website.
+
+
+## Design
+
+The design of the Infintea Bubble Tea app is crafted with the intention of creating an inviting and visually appealing user experience. 
+
+### Color Scheme
+
+The color scheme of the application is based on the bold colors:
+
+![Color Scheme](documentation/color-palette.png)
