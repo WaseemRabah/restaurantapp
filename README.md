@@ -116,3 +116,10 @@ The color scheme of the application is based on the bold colors:
 
 - [Desktop Wireframes](documentation/desktop_wireframe.pdf)
 - [Mobile Wireframes](documentation/mobile_wirframe.pdf)
+
+---
+
+
+## Flowcharts
+
+- [Flowchart](documentation/Blank%20diagram.pdf)
