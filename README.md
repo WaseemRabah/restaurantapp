@@ -43,3 +43,16 @@ By understanding and addressing the needs and preferences of our diverse target 
 5. **Provide Feedback**: If you've used our app or visited our restaurant, we appreciate your feedback and encourage you to share your experience with us.
 
 Our aim is to make your first visit to Infintea Bubble Tea informative, enjoyable, and convenient. We hope you have a delightful experience and consider us for your future bubble tea needs.
+
+#### **Frequent Visitor Goals**
+
+1. **Explore New Flavors**: Be adventurous and try a different bubble tea flavor or one of our seasonal specialties during each visit.
+2. **Loyalty Rewards**: Take advantage of our loyalty rewards program to earn points, discounts, or free items with each purchase.
+3. **Reserve Tables for Gatherings**: If you plan to meet friends or family at our restaurant, use our table reservation feature to secure a cozy spot in advance.
+4. **Connect on Social Media**: Follow us on social media platforms for news, updates, and to engage with our vibrant community of bubble tea enthusiasts.
+
+#### **Potential Client Goals**
+
+1. **Explore Our Offerings**: Take your time to explore our menu, discover the variety of bubble tea flavors.
+2. **Get to Know Our Brand**: Learn about our brand, our commitment to quality, and what sets us apart in the world of bubble tea.
+3. **Plan Your Visit**: Use our app to plan your visit, reserve a table, and prepare for a delightful experience.
