@@ -56,3 +56,40 @@ Our aim is to make your first visit to Infintea Bubble Tea informative, enjoyabl
 1. **Explore Our Offerings**: Take your time to explore our menu, discover the variety of bubble tea flavors.
 2. **Get to Know Our Brand**: Learn about our brand, our commitment to quality, and what sets us apart in the world of bubble tea.
 3. **Plan Your Visit**: Use our app to plan your visit, reserve a table, and prepare for a delightful experience.
+
+---
+
+## Technologies used
+
+- ### Languages:
+
+    + [Python 3.11.4](https://www.python.org/downloads/release/python-3114/): the primary language used to develop the server-side of the website.
+    + [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): the markup language used to create the website.
+    + [CSS](https://developer.mozilla.org/en-US/docs/Web/css): the styling language used to style the website.
+
+
+- ### Frameworks and libraries:
+    + [Django](https://www.djangoproject.com/): python framework used to create all the logic.
+
+
+- ### Databases:
+
+    + [SQLite](https://www.sqlite.org/): was used as a development database.
+    + [PostgreSQL](https://www.postgresql.org/): the database used to store all the data.
+
+
+- ### Other tools:
+
+    + [Git](https://git-scm.com/): the version control system used to manage the code.
+    + [Pip3](https://pypi.org/project/pip/): the package manager used to install the dependencies.
+    + [Gunicorn](https://gunicorn.org/): the webserver used to run the website.
+    + [Spycopg2](https://www.python.org/dev/peps/pep-0249/): the database driver used to connect to the database.
+    + [Django-crispy-forms](https://django-cryptography.readthedocs.io/en/latest/): was used to control the rendering behavior of Django forms.
+    + [Render](https://render.com/): the cloud platform used to host the website.
+    + [ElephantSQL](https://www.elephantsql.com/): the cloud database used to store all the data.
+    + [GitHub](https://github.com/): used to host the website's source code.
+    + [VSCode](https://code.visualstudio.com/): the IDE used to develop the website.
+    + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
+    + [Font Awesome](https://fontawesome.com/): was used to create the icons used in the website.
+    + [Draw.io](https://www.lucidchart.com/) was used to make a flowchart for the README file.
+    + [Coolors](https://coolors.co/202a3c-1c2431-181f2a-0b1523-65e2d9-925cef-6b28e0-ffffff-eeeeee) was used to make a color palette for the website.
