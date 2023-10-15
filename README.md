@@ -120,6 +120,42 @@ The color scheme of the application is based on the bold colors:
 ---
 
 
-## Flowcharts
+## Flowchart
 
 - [Flowchart](documentation/Blank%20diagram.pdf)
+
+
+
+### Database
+
+* During the earliest stages of the project, the database was created using SQLite.
+* The database was then migrated to PostgreSQL.
+
+
+## Deployment
+
+
+- The database was deployed to [ElephantSQL](https://www.elephantsql.com/).
+
+- The app can be reached by the [link](https://django-restaurant-app-c1be60f07ecd.herokuapp.com/).
+
+
+## Credits
+
+- [GitHub](https://github.com/) for giving the idea of the project's design.
+- [Django](https://www.djangoproject.com/) for the framework.
+- [ElephantSQL](https://www.elephantsql.com/): for the free hosting of the database.
+- [Font awesome](https://fontawesome.com/): for the free access to icons.
+- [Heroku](https://www.heroku.com/): for the free hosting of the website.
+- [Coolors](https://coolors.co/): for providing a free platform to generate your own palette.
+- [Postgresql](https://www.postgresql.org/): for providing a free database.
+- [Selmi Tech](https://www.youtube.com/watch?v=3_3q_dE4_qs)
+- [DarshanDev](https://www.youtube.com/@darshandev1754)
+- [Codemy](https://www.youtube.com/@Codemycom)
+
+---
+
+
+## Acknowledgments
+
+- [Juliia Konovalova](https://github.com/IuliiaKonovalova) Great supporter and motivator.
