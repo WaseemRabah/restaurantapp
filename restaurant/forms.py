@@ -4,6 +4,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
 class BookingForm(forms.ModelForm):
+    date = forms.DateField(widget=forms.TextInput(attrs={'type': 'date'}))
+    time = forms.TimeField(widget=forms.TextInput(attrs={'type': 'time'}))
     class Meta:
         model = Booking
         fields = ['name', 'email', 'num_people', 'date', 'time', 'occasion']
