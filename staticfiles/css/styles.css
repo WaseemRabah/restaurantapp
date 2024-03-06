@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Parisienne&family=Quicksand:wght@300&display=swap');
+/*style h1*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.header-home{
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: parisienne, sans-serif;
+    font-size: 80px;
+    color: #67265b;
+    text-align: center;
+}
+
+h2{
+    font-family: cairo, sans-serif;
+    font-size: 65px;
+    color: #67265b;
+}
+
+/*removing the line under anchor and add some style*/
+.navbar a{
+    text-decoration: none;
+    font-family: cairo, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: #aaadb5;
+    
+}
+.navbar a:hover {
+    text-decoration: underline;
+    color: #67265b;
+}
+/*sizing the hero image*/
+.hero-image {
+    display: flex;
+    width: 100%;
+    
+}
+.hero-image img{
+    width: 100%;
+}
+/*styling trending*/
+.trending {
+    width: 100%;
+    font-family: cairo, sans-serif;
+    font-size: 35px;
+    color: white;
+    background-color: #aaadb5;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+}
+.left {
+    display: flex;
+    width: 33.3%;
+    background-color: #2D313A;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.left li{
+    font-family: cairo, sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+.right {
+    display: flex;
+    width: 33.3%;
+    background-color: #2D313A;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right li{
+    font-family: cairo, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+
+.middle {
+    display: flex;
+    background: url(../images/trending1.jpg) no-repeat;
+    width: 33.3%;
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: xx-large;
+    background-color: #aaadb5;
+    height: 50px;
+    align-items: center;
+}
+
+
+/*styling menu page*/
+
+section {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #2D313A;
+    display: flex;
+    justify-content: space-around;
+}
+
+.heading__none {
+    display: none;
+}
+
+section a {
+    text-decoration: none;
+    color: white;
+    font-family: cairo, sans-serif;
+    font-size: 40px;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #D82D93;
+}
+.drinks {
+    display: flex;
+}
+.sparkling {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    color: white;
+    background-color: #D82D93;
+    justify-content: center;
+}
+
+
+.sparkling h3, .black-tea h3, .green-tea h3, .extras h3 {
+    font-family: cairo, sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.black-tea {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    color: white;
+    background-color: #D82D93;
+    justify-content: center;
+}
+.green-tea {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    color: white;
+    background-color: #D82D93;
+    justify-content: center;
+}
+.extras {
+    margin-top: 5%;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    color: white;
+    background-color: #D82D93;
+    justify-content: center;
+
+}
+
+/* Styling contact page */
+.contact-box {
+    width: 100%;
+    display: flex;
+    background-image: url(../images/contactbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+form {
+    width: 100%; /* Adjust form width to 100% */
+    max-width: 600px; /* Set maximum width for better readability */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.9); /* Add background color with transparency */
+    border-radius: 10px; /* Add border radius for smoother edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgba(247, 247, 247, 0.5); /* Add background color with transparency */
+    color: black;
+    border: 2px solid #D7CDB8;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+textarea {
+    height: 150px; /* Set height for textarea */
+}
+
+button[type="submit"] {
+    background-color: #D7CDB8;
+    width: 100%; /* Make the button full width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #67265B;
+    color: aliceblue;
+}
+
+/* Adjust styles for social media links */
+.social a {
+    color: #67265B;
+    margin-right: 10px; /* Add margin for better spacing between links */
+}
+
+.social a:hover {
+    color: #180C16;
+}
+
+
+/*media queries*/
+
+
+@media screen and (max-width: 760px) {
+
+    .navbar a{
+        font-size: 2rem;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+    }
+
+
+    .left{
+        width: 100%;
+        align-items: center;
+    }
+
+    .left li{
+        font-size: 1.1rem;
+    }
+
+
+    .right {
+        width: 100%;
+        align-items: center;
+    }
+
+    .right li {
+        font-size: 1.1rem;
+    }
+
+
+    .middle {
+        height: 27em;
+        width: 100%;
+    }
+    
+    .section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .section a {
+        font-size: 1.3rem;
+    }
+
+    .about {
+        background-image: none;
+    }
+
+    .trending {
+        font-size: 1.2rem;
+    }
+
+}
+
+.booking_list{
+    font-size: 50px;
+}
+
+
