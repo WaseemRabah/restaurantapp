@@ -38,6 +38,13 @@ h1 {
     color: #67265b;
     text-align: center;
 }
+
+h2{
+    font-family: cairo, sans-serif;
+    font-size: 65px;
+    color: #67265b;
+}
+
 /*removing the line under anchor and add some style*/
 .navbar a{
     text-decoration: none;
@@ -131,7 +138,7 @@ footer {
     justify-content: space-around;
     font-size: xx-large;
     background-color: #aaadb5;
-    height: 150px;
+    height: 50px;
     align-items: center;
 }
 
@@ -148,7 +155,7 @@ section {
 
 .heading__none {
     display: none;
-  }
+}
 
 section a {
     text-decoration: none;
@@ -231,7 +238,7 @@ figcaption {
 
 }
 
-/*styling contact page*/
+/* Styling contact page */
 .contact-box {
     width: 100%;
     display: flex;
@@ -241,79 +248,61 @@ figcaption {
     background-size: cover;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Add padding for better spacing */
 }
+
 form {
-    width: 80%;
-    position: relative;
-    
+    width: 100%; /* Adjust form width to 100% */
+    max-width: 600px; /* Set maximum width for better readability */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.9); /* Add background color with transparency */
+    border-radius: 10px; /* Add border radius for smoother edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
 }
-input, textarea{
-    width: 60%;
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
-    background: transparent;
+    background: rgba(247, 247, 247, 0.5); /* Add background color with transparency */
     color: black;
-    border: 6px solid #D7CDB8;
-    font-size: 20px;
-}
-
-.fname {
-    display: flex;
-    justify-content: center;
-}
-
-
-.email {
-    display: flex;
-    justify-content: center;
-}
-
-
-.textarea {
-    display: flex;
-    justify-content: center;
+    border: 2px solid #D7CDB8;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 textarea {
-    height: 500px;
-    margin-bottom: 5%;
-    
+    height: 150px; /* Set height for textarea */
 }
 
-
-
-input {
-    height: 60px;
-}
-
-
-
-button {
+button[type="submit"] {
     background-color: #D7CDB8;
-    width: 100px;
-    font-size: 20px;
-    position: absolute;
-    bottom: 0;
-    right: 20%;
-    margin-bottom: 1em;
+    width: 100%; /* Make the button full width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-
-button:hover {
-
-   background-color: #67265B;
-   color: aliceblue;
-
+button[type="submit"]:hover {
+    background-color: #67265B;
+    color: aliceblue;
 }
 
+/* Adjust styles for social media links */
 .social a {
     color: #67265B;
-  }
-
-
+    margin-right: 10px; /* Add margin for better spacing between links */
+}
 
 .social a:hover {
     color: #180C16;
-  }
+}
 
 
 /*media queries*/

@@ -2,13 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Online bubble tea shop">
-    <meta name="keywords" content="bubble tea, sparkling, boba, matcha, yin yang">
-    <meta name="author" content="waseem rabah">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% block meta %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Online bubble tea shop">
+        <meta name="keywords" content="bubble tea, sparkling, boba, matcha, yin yang">
+        <meta name="author" content="waseem rabah">
+    {% endblock %}
+
+    {% block corecss %}
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% endblock %}
+
     <title>Infinitea</title>
 </head>
 <body>
@@ -19,7 +25,7 @@
         <nav class="navbar">
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'create_booking' %}">Book a Table</a></li>
-            <li><a href="{% url 'booking_detail' %}">My Bookings</a></li>
+            <li><a href="{% url 'booking_list' %}">My Bookings</a></li>
             <li><a href="{% url 'contact' %}">Contact Us</a></li>
             <li><a href="{% url 'menu' %}">Menu</a></li>
             {% if user.is_authenticated %}

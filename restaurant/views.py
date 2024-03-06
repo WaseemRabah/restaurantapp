@@ -67,10 +67,11 @@ def create_booking(request):
             booking.user = request.user
             booking.save()
             return redirect('booking_list')
-            
     else:
         form = BookingForm()
-    return render(request, 'booking/booking_form.html', {'form': form})
+        
+    context = {'form': form}
+    return render(request, 'booking/booking_form.html', context)
 
 
 def update_booking(request, pk):

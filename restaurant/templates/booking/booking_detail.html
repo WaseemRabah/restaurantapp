@@ -1,21 +1,77 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Created</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .booking-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .booking-list li {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        
+        .thank-you-message {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+        
+        /* Style for the back to home button */
+        .back-to-home {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-{% block content %}
-<h2>Your Bookings for {{ email }}</h2>
-<ul>
-    {% for booking in bookings %}
-        <li>
-            <strong>Date:</strong> {{ booking.date }}<br>
-            <strong>Time:</strong> {{ booking.time }}<br>
-            <strong>Number of People:</strong> {{ booking.num_people }}<br>
-            <strong>Occasion:</strong> {{ booking.get_occasion_display }}<br>
-
-            <a href="{% url 'update_booking' booking.id %}">Edit</a>
-            <a href="{% url 'delete_booking' booking.id %}">Delete</a>
-        </li>
-    {% empty %}
-        <p>No bookings found for this email.</p>
-    {% endfor %}
-</ul>
-<a href="{% url 'home' %}">Back to Home</a>
-{% endblock %}
+        .back-to-home:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Booking</h1>
+        <ul class="booking-list">
+            {% for booking in bookings %}
+                <li>
+                    <strong>Name:</strong> {{ booking.name }}<br>
+                    <strong>Email:</strong> {{ booking.email }}<br>
+                    <strong>Date:</strong> {{ booking.date }}<br>
+                    <strong>Time:</strong> {{ booking.time }}<br>
+                    <strong>Occasion:</strong> {{ booking.get_occasion_display }}<br>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="thank-you-message">
+            <p>Thank you for your booking! We look forward to serving you.</p>
+        </div>
+        <!-- Back to home button -->
+        <a href="{% url 'home' %}" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+</html>
