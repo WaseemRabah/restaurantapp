@@ -7,6 +7,8 @@ Repository: [GitHub Repo](https://github.com/WaseemRabah/restaurantapp)
 
 The app is developed by [Waseem Rabah](https://github.com/WaseemRabah).
 
+![Infinitea](documentation/homepage.png)
+
 
 ## About
 [Infintea](https://django-restaurant-app-c1be60f07ecd.herokuapp.com/) is your go-to destination for delicious bubble tea. We specialize in crafting the finest bubble tea beverages and offer the convenience of reserving a table for an enjoyable  experience.
@@ -93,6 +95,16 @@ Our aim is to make your first visit to Infintea Bubble Tea informative, enjoyabl
     + [Font Awesome](https://fontawesome.com/): was used to create the icons used in the website.
     + [Draw.io](https://www.lucidchart.com/) was used to make a flowchart for the README file.
     + [Coolors](https://coolors.co/202a3c-1c2431-181f2a-0b1523-65e2d9-925cef-6b28e0-ffffff-eeeeee) was used to make a color palette for the website.
+
+---
+
+## FEATURES
+
+Please refer to the [FEATURES.md](FEATURES.md) file for all features-related documentation.
+
+
+
+---
 
 
 ## Design
