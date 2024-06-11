@@ -40,7 +40,7 @@ def loginPage(request):
 
         if user is not None:
             login(request, user)
-            return redirect('home')
+            return redirect('create_booking')
         else:
             messages.info(request, 'Username or Password is incorrect')
             
@@ -72,6 +72,8 @@ def create_booking(request):
         
     context = {'form': form}
     return render(request, 'booking/booking_form.html', context)
+
+
 
 
 def update_booking(request, pk):

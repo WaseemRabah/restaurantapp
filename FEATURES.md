@@ -22,3 +22,7 @@ Navbar has the following links:
 - ![Home](documentation/homepage.png)
 
 The simplistic design of the navbar is based on the decision to make the use of the webapp easy for the user.
+
+- book a table page
+If the user not logged in, he will be redirected to login page.
+- ![Book a Table](documentation/login-image.png)

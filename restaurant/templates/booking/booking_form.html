@@ -1,72 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Booking</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
+{% extends "base.html" %}
+{% load static %}
 
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            margin: 0 auto;
-            overflow: hidden; /* Clearfix */
-        }
+{% block title %}Create Booking{% endblock %}
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: calc(100% - 22px); /* Adjusted width */
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-            float: left; /* Float the input elements */
-        }
+{% block content %}
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 
-        button[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-        }
+    .container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 
-        button[type="submit"]:hover {
-            background-color: #45a049;
-        }
+    form {
+        width: 100%;
+        max-width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
 
-        /* Clearfix for float elements */
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
 
-        /* Error message style */
-        .error-message {
-            color: red;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-    </style>
-</head>
-<body>
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: bold;
+    }
 
-    <form method="post" class="clearfix"> <!-- Add clearfix class -->
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .error-message {
+        background-color: #ffe6e6;
+        color: #dc3545;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .error-message p {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .error-message ul {
+        margin: 10px 0 0;
+        padding-left: 20px;
+    }
+
+    .error-message li {
+        list-style: none;
+    }
+
+    footer {
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto;
+        width: 100%;
+    }
+</style>
+
+<div class="container">
+    <form method="post" class="clearfix">
         {% csrf_token %}
-        <h2>Please fill the form to book a table</h2> <!-- Moved h2 inside the form -->
+        <h3>Please fill the form to book a table</h3>
         {{ form.as_p }}
         <button type="submit">Submit</button>
 
@@ -84,6 +126,6 @@
             </div>
         {% endif %}
     </form>
+</div>
 
-</body>
-</html>
+{% endblock %}
