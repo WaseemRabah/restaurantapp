@@ -69,3 +69,6 @@ When the user click on edit booking, he will be redirected to the booking form a
 When the user click on Delete booking, an alert message will popup for the user
 
 - ![Delete Booking](documentation/delete-booking.png)
+
+- Footer, have the social media accounts
+- ![Footer](documentation/footer.png)
