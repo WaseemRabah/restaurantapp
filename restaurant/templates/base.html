@@ -19,32 +19,36 @@
 </head>
 <body>
 
-        <!--create navbar-->
 <header class="header-home">
     <h1>Infinitea <br><i class="fa-solid fa-infinity"></i></h1>
-        <nav class="navbar">
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'create_booking' %}">Book a Table</a></li>
-            <li><a href="{% url 'booking_list' %}">My Bookings</a></li>
-            <li><a href="{% url 'contact' %}">Contact Us</a></li>
-            <li><a href="{% url 'menu' %}">Menu</a></li>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'home' %}" aria-label="Go to Home">Home</a></li>
+            <li><a href="{% url 'create_booking' %}" aria-label="Book a Table">Book a Table</a></li>
+            <li><a href="{% url 'booking_list' %}" aria-label="View My Bookings">My Bookings</a></li>
+            <li><a href="{% url 'contact' %}" aria-label="Contact Us">Contact Us</a></li>
+            <li><a href="{% url 'menu' %}" aria-label="View Menu">Menu</a></li>
             {% if user.is_authenticated %}
-                <li><a href="{% url 'logout' %}">Sign Out</a></li>
+                <li><a href="{% url 'logout' %}" aria-label="Sign Out">Sign Out</a></li>
             {% else %}
-                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'register' %}" aria-label="Register">Register</a></li>
             {% endif %}
-        </nav>
+        </ul>
+    </nav>
 </header>
+
 {% block content %}
 {% endblock content %}
+
 <footer>
-        <!--add the social media links with icons-->
+    <!-- Add the social media links with icons -->
     <div class="social">
-        <a href="https://www.facebook.com/" target="_blank" rel="nooopener" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/" target="_blank" rel="nooopener" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.snapchat.com/" target="_blank" rel="nooopener" aria-label="Visit our Snapchat page"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Snapchat page"><i class="fa-brands fa-snapchat"></i></a>
     </div>
 </footer>
+
 <script src="https://kit.fontawesome.com/280e16a9f8.js" crossorigin="anonymous"></script>
 </body>
 </html>
