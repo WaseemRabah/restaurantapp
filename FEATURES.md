@@ -25,4 +25,4 @@ The simplistic design of the navbar is based on the decision to make the use of 
 
 - book a table page
 If the user not logged in, he will be redirected to login page.
-- ![Book a Table](documentation/login-image.png)
+- ![Book a Table](documentation/login.png)
