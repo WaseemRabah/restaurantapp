@@ -131,11 +131,22 @@ The color scheme of the application is based on the bold colors:
 
 ---
 
+## Agile Methodology
+
+### GitHub Project Management
+
+ ![GitHub Project Management](documentation/project-board.png)
+
+GitHub Project Management was used to manage the project. If it hadn't been for the GitHub project management, I wouldn't have been able to manage the development of the application. It helped me to prioritize the tasks and to keep track of my progress.
+
+
 
 ## Flowchart
 
 - [Flowchart](documentation/Blank%20diagram.pdf)
 
+
+## Information Architecture
 
 
 ### Database
@@ -143,6 +154,50 @@ The color scheme of the application is based on the bold colors:
 * During the earliest stages of the project, the database was created using SQLite.
 * The database was then migrated to PostgreSQL.
 
+### Entity-Relationship Diagram
+
+# Database Schema
+
+## Tables
+
+1. **auth_user** (Django's default User model table)
+2. **Booking**
+3. **ContactMessage**
+
+## Table: `Booking`
+
+| Column Name     | Data Type      | Constraints                             | Description                                           |
+|-----------------|----------------|-----------------------------------------|-------------------------------------------------------|
+| `id`              | Integer        | Primary Key, Auto Increment             | Unique identifier for each booking                    |
+| `user_id`         | Integer        | Foreign Key to `auth_user(id)`, Not Null | Reference to the user making the booking              |
+| `name`            | Varchar(30)    | Not Null                                | Name of the person who made the booking               |
+| `email`           | Varchar(254)   | Not Null                                | Email address of the person who made the booking      |
+| `num_people`      | PositiveInteger| Default: 1, Not Null                    | Number of people included in the booking              |
+| `date`            | DateTime       | Not Null                                | Date and time of the booking                          |
+| `time`            | Time           | Not Null                                | Time of the booking                                   |
+| `occasion`        | Char(1)        | Not Null, Default: '1'                  | Occasion type for the booking                         |
+
+## Table: `ContactMessage`
+
+| Column Name     | Data Type      | Constraints                             | Description                                           |
+|-----------------|----------------|-----------------------------------------|-------------------------------------------------------|
+| `id`              | Integer        | Primary Key, Auto Increment             | Unique identifier for each contact message            |
+| `name`            | Varchar(100)   | Not Null                                | Name of the person who sent the message               |
+| `email`           | Varchar(254)   | Not Null                                | Email address of the person who sent the message      |
+| `subject`         | Varchar(200)   | Not Null                                | Subject of the contact message                        |
+| `message`         | Text           | Not Null                                | Content of the contact message                        |
+
+## Relationships
+
+- Each `Booking` is linked to one `User` from the `auth_user` table (one-to-many relationship).
+
+## ER Diagram
+- [Database Scheme](documentation/restaurantapp-erd.pdf)
+
+---
+## Testing
+
+Please refer to the [TESTING.md](TESTING.md) file for all test-related documentation.
 
 ## Deployment
 
