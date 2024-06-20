@@ -75,7 +75,7 @@ def create_booking(request):
 
 
 
-
+@login_required
 def update_booking(request, pk):
     booking = Booking.objects.get(pk=pk)
     if request.method == 'POST':
@@ -96,7 +96,7 @@ def booking_detail(request):
     else:
         return render(request, 'booking/email_input.html')
 
-
+@login_required
 def delete_booking(request, pk):
     booking = get_object_or_404(Booking, pk=pk)
 

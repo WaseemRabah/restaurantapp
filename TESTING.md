@@ -31,3 +31,8 @@
 | TC_User_04   | Delete a user                         | User exists                               | 1. Retrieve user<br>2. Delete user                             | User is removed from the database                    |               |
 | TC_User_05   | Create user with existing username    | User with the same username exists        | 1. Navigate to user registration form<br>2. Enter existing username<br>3. Submit form | Error message displayed, user not created            |               |
 | TC_User_06   | Create user with invalid email        | None                                      | 1. Navigate to user registration form<br>2. Enter invalid email<br>3. Submit form | Error message displayed, user not created            |               |
+
+
+## Automated testing
+
+### Django unit testing
