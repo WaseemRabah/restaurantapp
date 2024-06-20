@@ -36,3 +36,29 @@
 ## Automated testing
 
 ### Django unit testing
+
+![Testing Coverage](documentation/tests-coverage.png)
+
+While developing tests I was running the following command:
+
+```
+python manage.py test <name of the app>
+```
+
+To create the coverage report, I ran the following command:
+
+```
+coverage run --source=<name of the app> manage.py test
+```
+```
+coverage report
+```
+To see the html version of the report, I ran the following command:
+
+```
+coverage html
+```
+```
+    python3 -m http.server
+```
+The link to the server will appear. Click the link to see the report and find out which parts of code has not been covered in testing.
