@@ -85,3 +85,10 @@ The link to the server will appear. Click the link to see the report and find ou
 - [Full JS Validation Report](documentation/js-validation.png)
 
 - No errors were found when passing through the official [JSHint](https://www.jshint.com/) validator, However, the validator has pointed out that The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype.
+
+
+### Python Validation:
+
+- [Full Python Validation Report](documentation/python-validation.pdf)
+
+- The most common error is that the line is too long when passing through the official [CI Python Linter](https://pep8ci.herokuapp.com/) 
