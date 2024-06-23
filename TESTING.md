@@ -66,3 +66,15 @@ The link to the server will appear. Click the link to see the report and find ou
 
 ## Validation:
 ### HTML Validation:
+
+- [Full HTML Validation Report](documentation/full-validation-report.pdf)
+
+- No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator. This checking was done manually by copying the view page source code and pasting it into the validator.
+
+### CSS Validation:
+
+### CSS Validation:
+
+- [Full CSS Validation Report](documentation/css-validation.png)
+
+- No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator.
