@@ -3,6 +3,7 @@ from datetime import datetime, time
 from django.shortcuts import render
 from django.contrib.auth.models import User
 
+
 # Create your models here.
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
@@ -18,10 +19,13 @@ class Booking(models.Model):
         ('4', 'Anniversary'),
         ('5', 'Party'),
     ]
-    occasion = models.CharField(max_length=1, choices=OCCASION_CHOICES, default='1')
+    occasion = models.CharField(
+        max_length=1, choices=OCCASION_CHOICES, default='1'
+        )
+
     def __str__(self):
         return f"Booking for {self.user.username}"
-    
+
 
 class ContactMessage(models.Model):
     name = models.CharField(max_length=100)

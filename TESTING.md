@@ -78,3 +78,10 @@ The link to the server will appear. Click the link to see the report and find ou
 - [Full CSS Validation Report](documentation/css-validation.png)
 
 - No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator.
+
+
+### JS Validation:
+
+- [Full JS Validation Report](documentation/js-validation.png)
+
+- No errors were found when passing through the official [JSHint](https://www.jshint.com/) validator, However, the validator has pointed out that The body of a for in should be wrapped in an if statement to filter unwanted properties from the prototype.

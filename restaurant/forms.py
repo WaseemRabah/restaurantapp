@@ -4,9 +4,11 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from datetime import date
 
+
 class BookingForm(forms.ModelForm):
     date = forms.DateField(widget=forms.TextInput(attrs={'type': 'date'}))
     time = forms.TimeField(widget=forms.TextInput(attrs={'type': 'time'}))
+
     class Meta:
         model = Booking
         fields = ['name', 'email', 'num_people', 'date', 'time', 'occasion']
@@ -16,7 +18,6 @@ class BookingForm(forms.ModelForm):
         if selected_date < date.today():
             raise forms.ValidationError("Cannot book a table in the past")
         return selected_date
-
 
 
 class ContactForm(forms.ModelForm):
