@@ -62,3 +62,7 @@ coverage html
     python3 -m http.server
 ```
 The link to the server will appear. Click the link to see the report and find out which parts of code has not been covered in testing.
+
+
+## Validation:
+### HTML Validation:
