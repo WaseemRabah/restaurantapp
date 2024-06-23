@@ -3,7 +3,7 @@
 
 {% block title %}Create Booking{% endblock %}
 
-{% block content %}
+{% block head %}
 <style>
     body, html {
         margin: 0;
@@ -106,7 +106,9 @@
     }
     
 </style>
+{% endblock %}
 
+{% block content %}
 <div class="container">
     <form method="post" class="clearfix">
         {% csrf_token %}
