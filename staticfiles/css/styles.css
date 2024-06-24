@@ -156,7 +156,7 @@ footer {
     background-color: #aaadb5;
     height: 50px;
     align-items: center;
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -361,6 +361,13 @@ button[type="submit"]:hover {
 
     .section a {
         font-size: 1.2rem;
+    }
+
+    .social{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     }
 }
 
