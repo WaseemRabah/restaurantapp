@@ -156,7 +156,7 @@ footer {
     background-color: #aaadb5;
     height: 50px;
     align-items: center;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
