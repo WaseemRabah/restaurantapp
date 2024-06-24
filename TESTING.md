@@ -71,7 +71,6 @@ The link to the server will appear. Click the link to see the report and find ou
 
 - No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator. This checking was done manually by copying the view page source code and pasting it into the validator.
 
-### CSS Validation:
 
 ### CSS Validation:
 
@@ -92,3 +91,44 @@ The link to the server will appear. Click the link to see the report and find ou
 - [Full Python Validation Report](documentation/python-validation.pdf)
 
 - The most common error is that the line is too long when passing through the official [CI Python Linter](https://pep8ci.herokuapp.com/) 
+
+
+
+---
+## Lighthouse Report
+
+### Home Page
+
+![Lighthouse Report. Home Page](documentation/home-lighthouse.png)
+
+### Booka a Table Page
+
+![Lighthouse Report. Book a Table Page](documentation/book-table-lighthouse.png)
+
+### Booking List Page
+
+![Lighthouse Report. Booking List Page](documentation/booking-list-lighthouse.png)
+
+### Menu Page
+
+![Lighthouse Report. Menu Page](documentation/menu-lighthouse.png)
+
+### Contact Page
+
+![Lighthouse Report. Contact Page](documentation/contact-lighthouse.png)
+
+### Register Page
+
+![Lighthouse Report. Register Page](documentation/register-lighthouse.png)
+
+
+---
+# Responsiveness
+
+The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
+
+[Responsiveness Report](documentation/responsiveness/responsiveness.pdf)
+
+
+
+---
