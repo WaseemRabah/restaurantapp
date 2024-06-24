@@ -127,7 +127,7 @@ The link to the server will appear. Click the link to see the report and find ou
 
 The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
 
-[Responsiveness Report](documentation/responsiveness/responsiveness.pdf)
+[Responsiveness Report](documentation/responsiveness.pdf)
 
 
 
