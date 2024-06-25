@@ -10,17 +10,8 @@ The app is developed by [Waseem Rabah](https://github.com/WaseemRabah).
 ![Infinitea](documentation/homepage.png)
 
 
-## About
+## Introduction
 [Infintea](https://django-restaurant-app-c1be60f07ecd.herokuapp.com/) is your go-to destination for delicious bubble tea. We specialize in crafting the finest bubble tea beverages and offer the convenience of reserving a table for an enjoyable  experience.
-
-
-
-## User Experience Design
-
-### Strategy
-
-the app is designed to be easy to use and intuitive. The main goal of the app is to help the owner to manage the Reservations, Users messages, etc.
-As a final goal, the app is aimed at increasing the efficiency of restaurant management.
 
 ### Target Audience
 
@@ -33,6 +24,51 @@ Infintea Bubble Tea is designed to cater to a diverse range of users, and our ta
 5. **Local Community**: Residents and regulars who consider Infintea their neighborhood hangout spot for delicious drinks and relaxation.
 
 By understanding and addressing the needs and preferences of our diverse target audience, we aim to create a versatile and inclusive user experience that appeals to a wide range of customers.
+
+
+
+# Design
+
+## Agile Strategy
+The Agile methodology was used to plan and create this project. I used the Projects tool within GitHub to manage the different processes needed for this project to be completed.
+You can see the project created [here](https://github.com/users/WaseemRabah/projects/2/views/1)
+
+- User Stories were created through GitHub Issues to highlight features for possible implementation.
+- These User Stories were then assigned a label from these options - 'Could Have', 'Should Have' and 'Must Have'. These labels helped to prioritise which features needed to be implemented first.
+
+After completing this project I saw the capability to use Epics (GitHub Milestones). These can give User Stories an overall theme to a group of User Stories - this is a feature within GitHub that I will research and use in future projects as I wasn't aware of this until after completing this project.
+
+![GitHub Project Management](documentation/project-board.png)
+
+### Project Goals
+The Infinitea Bubble Tea website is designed to create a comprehensive, user-friendly platform for bubble tea enthusiasts and shop owners.
+
+
+### Scope
+
+#### In-Scope
+
+1. **User Interface and User Experience (UI/UX)**
+   - Responsive and intuitive website layout.
+   - Home, menu, contact, and user account pages.
+
+2. **Product Management**
+   - Menu with images.
+
+3. **User Accounts and Profiles**
+   - User registration and login.
+
+4. **Branding and Content**
+   - Infinitea branding (logos, colors, typography).
+
+
+### Structure
+
+The plan for the structure of this was as follows -
+
+**At Minimum**
+- Home Page, Menu Pages, Account Page - Login, Logout, Sign Up.
+
 
 ### User Stories
 
@@ -60,6 +96,8 @@ Our aim is to make your first visit to Infintea Bubble Tea informative, enjoyabl
 3. **Plan Your Visit**: Use our app to plan your visit, reserve a table, and prepare for a delightful experience.
 
 ---
+
+
 
 ## Technologies used
 
@@ -200,6 +238,28 @@ GitHub Project Management was used to manage the project. If it hadn't been for 
 Please refer to the [TESTING.md](TESTING.md) file for all test-related documentation.
 
 ## Deployment
+
+I deployed the app using the website Heroku, which hosts internet applications.
+
+I used ElephantSQL to set up a free cloud database with them. Set up an account with ElephantSQL and then follow these steps.
+- Click Create New Instance to create a new database.
+![Deployment ElephantSQL](/documentation/sql1.png)
+- Choose your location and name.
+![Deployment ElephantSQL 2](/documentation/sql2.png)
+- Finalise setup
+- Copy over your URL and add this to your application IDE in your env.py, remember to keep this secret.
+![Deployment ElephantSQL 3](/documentation/sql3.webp)
+
+Set up an account with Heroku, then follow these steps for deployment -
+- Create an app
+- Name the app
+- Connect the app to GitHub and find the repository which you'd like to connect with.
+- Head over to the settings tab and find the Config Vars. Add the config vars appropriate to the app. In this case, it is PORT, ALLOWED_HOSTS, SECRET_KEY, CLOUDINARY_URL and DATABASE_URL.
+![Deployment Heroku](/documentation/heroku1.png)
+- **Before your final deployment you must set DEBUG = False within your IDE, so to make sure that your code is safe and the site works as intended with any 404 pages working correctly. Once this has been make, you can make your final `push` to your GitHub Repository**
+- Switch back to the Deploy tab and half way down the page you can select automatic deploys. When this is active, whenever a new edit is received by GitHub, Heroku also updates the application and builds a new deployment. Once this has been checked, click the deploy branch button at the bottom and await for the domain URL to be generated.
+
+![Deployment Heroku 2](/documentation/heroku2.png)
 
 
 - The database was deployed to [ElephantSQL](https://www.elephantsql.com/).
