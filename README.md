@@ -286,3 +286,4 @@ Set up an account with Heroku, then follow these steps for deployment -
 ## Acknowledgments
 
 - [Juliia Konovalova](https://github.com/IuliiaKonovalova) Great supporter and motivator.
+- [Code Institute](https://codeinstitute.net/) tutors and Slack community members for their support and help.
